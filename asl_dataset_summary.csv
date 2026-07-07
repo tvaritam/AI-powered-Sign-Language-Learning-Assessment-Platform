@@ -1,0 +1,10 @@
+Metric,Value
+Total Gesture Classes,3
+Total Dataset Images,0
+Largest Class Designation,asl_alphabet (0 images)
+Smallest Class Designation,asl_alphabet (0 images)
+
+Gesture Class Label,Image Volume Count
+asl_alphabet,0
+rwth_phoenix,0
+wlasl,0
