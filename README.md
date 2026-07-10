@@ -20,13 +20,11 @@ The project implements a modular, service-oriented architecture divided into cle
 
 Local Installation & Environment Setup
  1. Clone and Navigate
-```bash
 git clone <your-repository-url>
-cd SignLanguagePlatform
-
+cd SignLanguagePlatform 
 
 2. Configure the Python Sandbox Environment
-```bash
+
 # Windows (Git Bash / Command Prompt)
 python -m venv venv
 source venv/Scripts/activate
@@ -63,9 +61,9 @@ JSON
     "success_percentage": "100.0%"
   }
 }
-Generated ML Pipeline Artifacts
+ Generated ML Pipeline Artifacts
 Once executed, the pipeline populates data files into the backend/app/ai/ workspace folder:
 
 landmarks.csv: Contains the flattened 63 numerical spatial feature rows and label strings used as training matrices for future machine learning model development.
 
-dataset_report.json: Provides an automated quality assurance logging audit showing overall pipeline validation status. 
+dataset_report.json: Provides an automated quality assurance logging audit showing overall pipeline validation status.
