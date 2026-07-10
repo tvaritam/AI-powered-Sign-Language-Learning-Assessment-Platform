@@ -20,22 +20,23 @@ The project implements a modular, service-oriented architecture divided into cle
 
 Local Installation & Environment Setup
 1. Clone and Navigate
+   '''bash 
 git clone <your-repository-url>
 cd SignLanguagePlatform 
 
-2. Configure the Python Sandbox Environment
-
+3. Configure the Python Sandbox Environment
+'''Bash 
 python -m venv venv
 source venv/Scripts/activate
 
 3. Install Required Dependencies
-Bash
+'''bash
 python -m pip install --upgrade pip setuptools wheel
 pip install fastapi uvicorn pandas opencv-python numpy
 Execution Instructions
 Start your local Uvicorn development server from the project workspace root:
 
-Bash
+'''Bash
 PYTHONPATH=backend ./venv/Scripts/python -m uvicorn app.main:app --reload
 The server will start up locally at http://127.0.0.1:8000.
 
