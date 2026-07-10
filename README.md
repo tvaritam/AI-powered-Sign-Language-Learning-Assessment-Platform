@@ -20,26 +20,28 @@ The project implements a modular, service-oriented architecture divided into cle
 
 Local Installation & Environment Setup
 1. Clone and Navigate
-   '''bash 
+```bash
 git clone <your-repository-url>
-cd SignLanguagePlatform 
+cd SignLanguagePlatform
+```
 
 3. Configure the Python Sandbox Environment
-'''Bash 
+```bash
 python -m venv venv
 source venv/Scripts/activate
+```
 
 3. Install Required Dependencies
-'''bash
+```bash
 python -m pip install --upgrade pip setuptools wheel
 pip install fastapi uvicorn pandas opencv-python numpy
 Execution Instructions
 Start your local Uvicorn development server from the project workspace root:
-
-'''Bash
+```
+```bash
 PYTHONPATH=backend ./venv/Scripts/python -m uvicorn app.main:app --reload
 The server will start up locally at http://127.0.0.1:8000.
-
+```
 Testing the Pipeline via Swagger UI
 Open your web browser and go to your interactive documentation dashboard:
 http://127.0.0.1:8000/docs
@@ -50,6 +52,7 @@ Click Try it out and then press the blue Execute button.
 
 Expected Successful Response (200 OK):
 JSON
+```bash
 {
   "success": true,
   "message": "Dataset preprocessing completed successfully.",
@@ -61,7 +64,8 @@ JSON
     "success_percentage": "100.0%"
   }
 }
- Generated ML Pipeline Artifacts
+```
+Generated ML Pipeline Artifacts
 Once executed, the pipeline populates data files into the backend/app/ai/ workspace folder:
 
 landmarks.csv: Contains the flattened 63 numerical spatial feature rows and label strings used as training matrices for future machine learning model development.
