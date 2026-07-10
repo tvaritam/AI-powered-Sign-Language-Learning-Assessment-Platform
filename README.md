@@ -19,13 +19,12 @@ The project implements a modular, service-oriented architecture divided into cle
 ---
 
 Local Installation & Environment Setup
- 1. Clone and Navigate
+1. Clone and Navigate
 git clone <your-repository-url>
 cd SignLanguagePlatform 
 
 2. Configure the Python Sandbox Environment
 
-# Windows (Git Bash / Command Prompt)
 python -m venv venv
 source venv/Scripts/activate
 
