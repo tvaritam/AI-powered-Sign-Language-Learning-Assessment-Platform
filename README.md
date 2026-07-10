@@ -18,22 +18,20 @@ The project implements a modular, service-oriented architecture divided into cle
 
 ---
 
-##  Local Installation & Environment Setup
-
-### 1. Clone and Navigate
+Local Installation & Environment Setup
+ 1. Clone and Navigate
 ```bash
 git clone <your-repository-url>
 cd SignLanguagePlatform
-2. Configure the Python Sandbox Environment
-Create and activate your Python virtual environment:
 
-Bash
+
+2. Configure the Python Sandbox Environment
+```bash
 # Windows (Git Bash / Command Prompt)
 python -m venv venv
 source venv/Scripts/activate
-3. Install Required Dependencies
-Install the necessary dependencies to handle image processing and web routing layers securely:
 
+3. Install Required Dependencies
 Bash
 python -m pip install --upgrade pip setuptools wheel
 pip install fastapi uvicorn pandas opencv-python numpy
@@ -70,4 +68,4 @@ Once executed, the pipeline populates data files into the backend/app/ai/ worksp
 
 landmarks.csv: Contains the flattened 63 numerical spatial feature rows and label strings used as training matrices for future machine learning model development.
 
-dataset_report.json: Provides an automated quality assurance logging audit showing overall pipeline validation status.
+dataset_report.json: Provides an automated quality assurance logging audit showing overall pipeline validation status. 
