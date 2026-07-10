@@ -25,7 +25,7 @@ git clone <your-repository-url>
 cd SignLanguagePlatform
 ```
 
-3. Configure the Python Sandbox Environment
+2. Configure the Python Sandbox Environment
 ```bash
 python -m venv venv
 source venv/Scripts/activate
